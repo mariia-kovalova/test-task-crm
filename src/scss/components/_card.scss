@@ -1,0 +1,56 @@
+.card {
+  @apply relative z-[2] block h-full rounded-xl bg-white;
+
+  &__popular {
+    @apply absolute left-1/2 top-0 z-[3] -translate-x-1/2 -translate-y-1/2 rounded-xl border-[3px] border-orange bg-yellow px-3 text-xs font-black uppercase;
+  }
+
+  &__teams {
+    @apply relative z-[2] flex h-[130px] w-full items-center justify-between overflow-hidden rounded-tl-xl rounded-tr-xl px-[38px];
+
+    &::after,
+    &::before {
+      @apply absolute z-[-1] bg-cover bg-center bg-no-repeat content-[""];
+    }
+
+    &::before {
+      @apply left-0 top-0 h-[130px] w-full;
+      background-image: image-set(
+        '@img/hero/stadium.webp' 1x,
+        '@img/hero/stadium@2x.webp' 2x
+      );
+    }
+
+    &::after {
+      @apply left-1/2 top-0 h-[130px] w-[84px] -translate-x-1/2;
+      background-image: image-set(
+        '@img/hero/vs.webp' 1x,
+        '@img/hero/vs@2x.webp' 2x
+      );
+    }
+  }
+
+  &__content {
+    @apply p-5 pt-4;
+  }
+
+  &__text {
+    @apply mb-1 text-xs;
+  }
+
+  &__sport {
+    @apply font-black text-blue;
+  }
+
+  &__slash {
+    @apply text-gray/30;
+  }
+
+  &__due {
+    @apply text-gray;
+  }
+
+  &__title {
+    @apply text-lg font-bold;
+  }
+}

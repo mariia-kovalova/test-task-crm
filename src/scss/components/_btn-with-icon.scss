@@ -1,0 +1,13 @@
+.btn-with-icon {
+  @apply flex items-center  text-sm font-black text-blue;
+
+  &__calendar {
+    @apply gap-[6px];
+    @apply transition-all duration-300 hover:text-blue-light focus:text-blue-light active:text-blue-light;
+  }
+
+  &__forecast {
+    @apply gap-[2px] rounded-[40px] px-2 py-[6px];
+    @apply transition-all duration-300 hover:bg-blue-light/10 focus:bg-blue-light/10 active:bg-blue-light/10;
+  }
+}
