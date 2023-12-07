@@ -13,7 +13,7 @@ export const path = {
     fonts: `${buildFolder}/fonts/`,
   },
   src: {
-    html: `${srcFolder}/*.+(html|nunjucks|njk)`,
+    html: `${srcFolder}/html/pages/*.pug`,
     scss: `${srcFolder}/scss/style.scss`,
     js: `${srcFolder}/js/**/*.js`,
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
@@ -23,7 +23,7 @@ export const path = {
     data: `${srcFolder}/json/**/*`,
   },
   watch: {
-    html: `${srcFolder}/**/*.+(html|nunjucks|njk)`,
+    html: `${srcFolder}/**/*.pug`,
     scss: `${srcFolder}/scss/**/*.scss`,
     tailwindcss: './tailwind.config.js',
     js: `${srcFolder}/js/**/*.js`,

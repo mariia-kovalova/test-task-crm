@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 @layer base {
-  // @include font-face('Inter', '../fonts/Inter-Thin', 100);
-  // @include font-face('Inter', '../fonts/Inter-ExtraLight', 200);
-  // @include font-face('Inter', '../fonts/Inter-Light', 300);
-  @include font-face('Inter', '../fonts/Inter-Regular', 400);
-  // @include font-face('Inter', '../fonts/Inter-Medium', 500);
-  @include font-face('Inter', '../fonts/Inter-SemiBold', 600);
-  @include font-face('Inter', '../fonts/Inter-Bold', 700);
-  // @include font-face('Inter', '../fonts/Inter-ExtraBold', 800);
-  @include font-face('Inter', '../fonts/Inter-Black', 900);
+  // @include font-face('Poppins', '../fonts/Poppins-Thin', 100);
+  // @include font-face('Poppins', '../fonts/Poppins-ExtraLight', 200);
+  // @include font-face('Poppins', '../fonts/Poppins-Light', 300);
+  @include font-face('Poppins', '../fonts/Poppins-Regular', 400);
+  @include font-face('Poppins', '../fonts/Poppins-Medium', 500);
+  @include font-face('Poppins', '../fonts/Poppins-SemiBold', 600);
+  // @include font-face('Poppins', '../fonts/Poppins-Bold', 700);
+  // @include font-face('Poppins', '../fonts/Poppins-ExtraBold', 800);
+  // @include font-face('Poppins', '../fonts/Poppins-Black', 900);
 }
 
 body {
-  @apply bg-body font-inter text-base font-normal text-black-main;
+  @apply font-poppins bg-body text-base font-medium text-blue-400;
 }
 
 .visually-hidden {
@@ -26,12 +26,4 @@ body {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-
-.position-wrapper {
-  @apply mb-20 flex flex-col-reverse gap-[52px] md:flex-row md:gap-6;
-
-  & .leagues {
-    @apply md:w-[264px];
-  }
 }
