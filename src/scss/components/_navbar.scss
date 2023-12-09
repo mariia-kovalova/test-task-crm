@@ -1,0 +1,61 @@
+.nav {
+  @apply mt-[53px];
+
+  &__list {
+    @apply flex flex-col gap-[18px];
+  }
+
+  &__link {
+    @apply flex items-center justify-between rounded-lg py-[11px] pl-[11px] pr-[15px];
+  }
+
+  &__title {
+    @apply flex items-center gap-[14px];
+  }
+
+  & .icon-dashboard,
+  & .icon-customers,
+  & .icon-income,
+  & .icon-help,
+  & .icon-product,
+  & .icon-promote,
+  & .icon-arrow {
+    @apply stroke-blue-200;
+  }
+
+  & .icon-arrow {
+    @apply stroke-2;
+  }
+
+  & .icon-dashboard,
+  & .icon-customers,
+  & .icon-income {
+    @apply stroke-[1.5];
+  }
+
+  // acite link
+
+  &__link--active {
+    @apply bg-blue text-white;
+
+    & .icon-arrow {
+      @apply stroke-white;
+    }
+
+    & .icon-dashboard,
+    & .icon-customers,
+    & .icon-income,
+    & .icon-help,
+    & .icon-product,
+    & .icon-promote {
+      @apply stroke-white;
+    }
+  }
+}
+
+// & .icon-dashboard,
+//     & .icon-customers,
+//     & .icon-income,
+//     & .icon-help,
+//     & .icon-product,
+//     & .icon-promote {}

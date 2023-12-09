@@ -1,5 +1,7 @@
 - const component = components.logo
 
-a.logo(href=page.canonical, aria-label=component.link_aria)
-   +svgIcon(component.icon)
-
+a.logo(href=common.canonical, aria-label=component.aria)
+  +svgIcon(component.icon)
+  p  
+    span(class="logo__text") #{component.text}
+    span(class="logo__version") #{component.version}

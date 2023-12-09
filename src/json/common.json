@@ -1,0 +1,123 @@
+{
+  "common": {
+    "lang": "en",
+    "title": "Dashboard",
+    "description": "This website is test task - CRM Dashboard.",
+    "canonical": "http://localhost:3000/",
+    "user": {
+      "name": "Evano",
+      "position": "Project Manager",
+      "image": "@img/common/user.jpg"
+    }
+  },
+  "header": { "welcome": { "text": "Hello", "hand": "👋🏼," } },
+  "components": {
+    "logo": {
+      "aria": "Link to the homepage",
+      "text": "Dashboard",
+      "version": "v.01",
+      "icon": {
+        "aria": "Website logo",
+        "svg": "icon-logo",
+        "width": 37,
+        "height": 37
+      }
+    },
+    "navigation": {
+      "icons": {
+        "menu": {
+          "aria": "Open menu icon",
+          "svg": "icon-menu",
+          "width": 32,
+          "height": 32
+        },
+        "close": {
+          "aria": "Close menu icon",
+          "svg": "icon-close",
+          "width": 32,
+          "height": 32
+        },
+        "arrow": {
+          "aria": "Arrow icon",
+          "svg": "icon-arrow",
+          "width": 16,
+          "height": 16
+        }
+      },
+      "items": [
+        {
+          "link": "./",
+          "title": "Dashboard",
+          "isActive": false,
+          "isArrow": false,
+          "icon": {
+            "aria": "Dashboard icon",
+            "svg": "icon-dashboard",
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "link": "./",
+          "title": "Product",
+          "isActive": false,
+          "isArrow": true,
+          "icon": {
+            "aria": "Product icon",
+            "svg": "icon-product",
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "link": "./",
+          "title": "Customers",
+          "isActive": true,
+          "isArrow": true,
+          "icon": {
+            "aria": "Customers icon",
+            "svg": "icon-customers",
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "link": "./",
+          "title": "Income",
+          "isActive": false,
+          "isArrow": true,
+          "icon": {
+            "aria": "Income icon",
+            "svg": "icon-income",
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "link": "./",
+          "title": "Promote",
+          "isActive": false,
+          "isArrow": true,
+          "icon": {
+            "aria": "Promote icon",
+            "svg": "icon-promote",
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "link": "./",
+          "title": "Help",
+          "isActive": false,
+          "isArrow": true,
+          "icon": {
+            "aria": "Help icon",
+            "svg": "icon-help",
+            "width": 24,
+            "height": 24
+          }
+        }
+      ]
+    }
+  }
+}

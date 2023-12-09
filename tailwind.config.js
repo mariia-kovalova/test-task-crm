@@ -20,13 +20,26 @@ const config = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      fontSize: {
+        xs: ['12px', '1'],
+        sm: ['12px', '1.2'],
+        base: ['14px', '1.2'],
+        lg: ['22px', '1.2'],
+        xl: ['24px', '1.2'],
+        xxl: ['26px', '1.2'],
+      },
       // COLORS
       colors: {
         body: '#fafbff',
         black: '#000000',
-        white: { DEFAULT: '#ffffff', cream: '#eeeeee' },
-        brown: { DEFAULT: '#757575', light: '#838383' },
         red: { DEFAULT: '#df0404', light: '#ffc5c5' },
+        brown: { DEFAULT: '#757575', 100: '#838383', 200: '#7e7e7e' },
+        white: {
+          DEFAULT: '#ffffff',
+          100: '#eeeeee',
+          200: '#f5f5f5',
+          300: '#f9fbff',
+        },
         blue: {
           DEFAULT: '#5932ea',
           100: '#b5b7c0',
@@ -40,6 +53,11 @@ const config = {
           200: '#16c09861',
           300: '#008767',
         },
+      },
+      // BOX SHADOW
+      boxShadow: {
+        100: ' 0px 10px 60px 0px rgba(226, 236, 249, 0.50)',
+        200: '0px 10px 60px rgba(226, 236, 249, 0.50)',
       },
     },
   },

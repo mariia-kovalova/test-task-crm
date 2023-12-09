@@ -23,7 +23,7 @@ export const path = {
     data: `${srcFolder}/json/**/*`,
   },
   watch: {
-    html: `${srcFolder}/**/*.pug`,
+    html: `${srcFolder}/html/**/*.pug`,
     scss: `${srcFolder}/scss/**/*.scss`,
     tailwindcss: './tailwind.config.js',
     js: `${srcFolder}/js/**/*.js`,

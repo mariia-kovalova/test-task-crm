@@ -2,7 +2,11 @@
 @import 'vendors/tailwind';
 
 @import 'components/logo';
-@import 'components/mobile-menu';
-@import 'components/nav-menu';
+@import 'components/navbar';
+@import 'components/user';
+@import 'components/customers-list';
+@import 'components/pagination';
 
 @import 'sections/header';
+@import 'sections/sidebar';
+@import 'sections/customers';

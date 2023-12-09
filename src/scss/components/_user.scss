@@ -1,0 +1,11 @@
+.user {
+  @apply flex items-center gap-3;
+
+  &__image {
+    @apply rounded-full;
+  }
+
+  &__position {
+    @apply text-sm font-normal tracking-[0.12px] text-brown;
+  }
+}

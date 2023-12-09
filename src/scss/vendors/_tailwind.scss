@@ -15,7 +15,7 @@
 }
 
 body {
-  @apply font-poppins bg-body text-base font-medium text-blue-400;
+  @apply bg-body font-poppins text-base font-medium text-blue-400;
 }
 
 .visually-hidden {
@@ -26,4 +26,34 @@ body {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.common-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.layout {
+  @apply grid;
+  grid-template-columns: 306px 1fr;
+  grid-template-rows: 128px 1fr;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar page';
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  @apply h-[100vh];
+}
+
+.page {
+  grid-area: page;
+}
+
+.wrapper {
+  @apply ml-[71px] w-[968px];
 }

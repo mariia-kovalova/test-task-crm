@@ -1,0 +1,40 @@
+$table-col-sizes: (
+  1: 160px,
+  2: 119px,
+  3: 144px,
+  4: 195px,
+  5: 128px,
+  6: 80px,
+);
+
+.customers__head {
+  @apply flex gap-3;
+
+  // &__text {
+  // }
+
+  @each $number, $size in $table-col-sizes {
+    &__text:nth-child(#{$number}) {
+      width: $size;
+    }
+  }
+}
+
+.customer {
+  @apply flex gap-3;
+
+  // &__text {
+  // }
+
+  @each $number, $size in $table-col-sizes {
+    &__text:nth-child(#{$number}) {
+      width: $size;
+    }
+  }
+
+  // &__status {
+  // }
+
+  // &__status--active {
+  // }
+}

@@ -1,6 +1,8 @@
 extends ../layout 
 
 block content
-  main
-    .wrapper hello
-    include ../components/logo
+  .layout
+    include ../sections/header
+    include ../sections/sidebar
+    main.page
+      include ../sections/customers
