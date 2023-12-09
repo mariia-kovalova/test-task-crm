@@ -1,18 +1,19 @@
 .customers {
-  & .wrapper {
-    @apply rounded-[30px] bg-white pb-10 pl-[38px] pr-10 pt-[30px] shadow-200;
+  @apply relative w-[968px] rounded-[30px] bg-white pb-10 pl-[38px] pr-10 pt-[33px] shadow-200;
+
+  &::before {
+    @apply absolute left-0 top-[166px] h-[1px] w-full bg-white-100 content-[""];
   }
 
   &__top {
     @apply flex items-center justify-between;
   }
 
-  // &__title {
-  // }
+  &__title {
+    @apply text-lg font-semibold tracking-[-0.22px] text-black;
+  }
 
-  // &__subtitle {
-  // }
-
-  // &__search {
-  // }
+  &__subtitle {
+    @apply mt-3 font-normal tracking-[-0.14px] text-green;
+  }
 }

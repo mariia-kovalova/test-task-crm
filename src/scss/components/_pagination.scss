@@ -1,15 +1,16 @@
 .pagination {
-  @apply flex justify-between;
+  @apply mt-7 flex justify-between;
 
-  // &__info {
-  // }
+  &__info {
+    @apply leading-6 tracking-[-0.14px] text-blue-100;
+  }
 
   &__buttons {
-    @apply flex items-center gap-3;
+    @apply flex items-center gap-[13.5px];
   }
 
   &__list {
-    @apply flex gap-3;
+    @apply flex gap-[13.5px];
   }
 
   &__dots {
@@ -18,7 +19,7 @@
 }
 
 .pagination__button {
-  @apply common-transition flex h-6 w-6 items-center justify-center rounded-[4px] border border-white-100 bg-white-200;
+  @apply common-transition flex h-6 w-6 items-center justify-center rounded-[4px] border border-white-100 bg-white-200 text-blue-300;
 
   .pagination__buttons &:first-child > .icon-arrow {
     @apply rotate-180;

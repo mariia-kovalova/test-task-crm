@@ -5,10 +5,6 @@
     @apply flex flex-col gap-[18px];
   }
 
-  &__link {
-    @apply flex items-center justify-between rounded-lg py-[11px] pl-[11px] pr-[15px];
-  }
-
   &__title {
     @apply flex items-center gap-[14px];
   }
@@ -27,35 +23,30 @@
     @apply stroke-2;
   }
 
-  & .icon-dashboard,
   & .icon-customers,
+  & .icon-dashboard,
   & .icon-income {
     @apply stroke-[1.5];
   }
 
-  // acite link
+  &__link {
+    @apply flex items-center justify-between rounded-lg py-[11px] pl-[11px] pr-2;
 
-  &__link--active {
-    @apply bg-blue text-white;
+    &:hover,
+    &:focus,
+    &:active,
+    &.nav__link--active {
+      @apply bg-blue text-white;
 
-    & .icon-arrow {
-      @apply stroke-white;
-    }
-
-    & .icon-dashboard,
-    & .icon-customers,
-    & .icon-income,
-    & .icon-help,
-    & .icon-product,
-    & .icon-promote {
-      @apply stroke-white;
+      & .icon-arrow,
+      & .icon-dashboard,
+      & .icon-customers,
+      & .icon-income,
+      & .icon-help,
+      & .icon-product,
+      & .icon-promote {
+        @apply stroke-white;
+      }
     }
   }
 }
-
-// & .icon-dashboard,
-//     & .icon-customers,
-//     & .icon-income,
-//     & .icon-help,
-//     & .icon-product,
-//     & .icon-promote {}

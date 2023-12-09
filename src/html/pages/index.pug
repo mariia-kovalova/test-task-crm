@@ -1,8 +1,8 @@
 extends ../layout 
 
 block content
-  .layout
+  include ../sections/sidebar
+  .page
     include ../sections/header
-    include ../sections/sidebar
-    main.page
+    main
       include ../sections/customers

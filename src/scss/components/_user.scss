@@ -1,8 +1,18 @@
 .user {
-  @apply flex items-center gap-3;
+  @apply flex items-center gap-3 p-2;
+
+  &:hover,
+  &:focus,
+  &:active {
+    @apply rounded-lg bg-blue/5;
+  }
 
   &__image {
     @apply rounded-full;
+  }
+
+  &__name {
+    @apply text-black;
   }
 
   &__position {
