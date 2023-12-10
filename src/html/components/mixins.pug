@@ -1,4 +1,4 @@
 mixin svgIcon({svg,width,height,aria})
-  svg(class=svg, width=width, height=height, aria-label=aria)
+  svg(class=svg, width=width, height=height, aria-label=aria, data-icon)
     title=aria
     use(href=`@img/sprite.svg#${svg}`)

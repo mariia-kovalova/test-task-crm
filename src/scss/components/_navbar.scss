@@ -1,6 +1,4 @@
 .nav {
-  @apply mt-[53px];
-
   &__list {
     @apply flex flex-col gap-[18px];
   }
@@ -9,28 +7,22 @@
     @apply flex items-center gap-[14px];
   }
 
-  & .icon-dashboard,
-  & .icon-customers,
-  & .icon-income,
-  & .icon-help,
-  & .icon-product,
-  & .icon-promote,
-  & .icon-arrow {
-    @apply stroke-blue-200;
-  }
-
-  & .icon-arrow {
-    @apply stroke-2;
-  }
-
-  & .icon-customers,
-  & .icon-dashboard,
-  & .icon-income {
-    @apply stroke-[1.5];
-  }
-
   &__link {
     @apply flex items-center justify-between rounded-lg py-[11px] pl-[11px] pr-2;
+
+    & [data-icon] {
+      @apply stroke-blue-200;
+    }
+
+    & .icon-arrow {
+      @apply stroke-2;
+    }
+
+    & .icon-customers,
+    & .icon-dashboard,
+    & .icon-income {
+      @apply stroke-[1.5];
+    }
 
     &:hover,
     &:focus,
@@ -38,13 +30,7 @@
     &.nav__link--active {
       @apply bg-blue text-white;
 
-      & .icon-arrow,
-      & .icon-dashboard,
-      & .icon-customers,
-      & .icon-income,
-      & .icon-help,
-      & .icon-product,
-      & .icon-promote {
+      & [data-icon] {
         @apply stroke-white;
       }
     }

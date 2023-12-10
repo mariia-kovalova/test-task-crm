@@ -28,6 +28,7 @@ export const path = {
     tailwindcss: './tailwind.config.js',
     js: `${srcFolder}/js/**/*.js`,
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
+    sprite: `${srcFolder}/sprite/*.svg`,
     data: `${srcFolder}/json/**/*`,
   },
   clean: buildFolder,

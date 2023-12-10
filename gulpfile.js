@@ -28,6 +28,7 @@ function watcher() {
   watch(path.watch.scss, scss);
   watch(path.watch.js, js);
   watch(path.watch.images, images);
+  watch(path.watch.sprite, sprite);
 }
 
 const mainTasks = parallel(fonts, html, scss, js, images, sprite);

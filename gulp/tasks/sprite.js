@@ -25,5 +25,6 @@ export const sprite = () => {
       }),
     )
     .pipe(size({ showFiles: true }))
-    .pipe(gulp.dest(path.build.images));
+    .pipe(gulp.dest(path.build.images))
+    .pipe(plugins.browserSync.stream());
 };
