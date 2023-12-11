@@ -5,7 +5,7 @@
       +svgIcon(pagination.arrow)
     ul.pagination__list 
       each item in pagination.items
-        li 
+        li.pagination__item 
           if typeof item === 'number'
             button.pagination__button(class={"pagination__button--active": item === pagination.current_page})   #{item}
           else 

@@ -36,8 +36,8 @@
 @mixin mq($range) {
   $mobile: 480px;
   $tablet: 768px;
-  $desktop: 1024px;
-  $big-desktop: 1280px;
+  $laptop: 1024px;
+  $desktop: 1280px;
 
   @if $range == mobile-only {
     @media (max-width: #{$tablet - 0.02}) {
@@ -48,23 +48,23 @@
       @content;
     }
   } @else if $range == tablet-only {
-    @media (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+    @media (min-width: $tablet) and (max-width: #{$laptop - 0.02}) {
       @content;
     }
   } @else if $range == tablet {
     @media (min-width: $tablet) {
       @content;
     }
-  } @else if $range == desktop-only {
-    @media (min-width: $desktop) and (max-width: #{$big-desktop - 0.02}) {
+  } @else if $range == laptop-only {
+    @media (min-width: $laptop) and (max-width: #{$desktop - 0.02}) {
+      @content;
+    }
+  } @else if $range == laptop {
+    @media (min-width: $laptop) {
       @content;
     }
   } @else if $range == desktop {
     @media (min-width: $desktop) {
-      @content;
-    }
-  } @else if $range == big-desktop {
-    @media (min-width: $big-desktop) {
       @content;
     }
   } @else if $range == notDesktop {

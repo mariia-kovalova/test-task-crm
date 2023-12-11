@@ -40,7 +40,7 @@ function handleBackDropClick(e) {
 }
 
 function toggleMenu() {
-  if (window.innerWidth < 1024) {
+  if (window.innerWidth < 1280) {
     const expanded =
       refs.openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
 

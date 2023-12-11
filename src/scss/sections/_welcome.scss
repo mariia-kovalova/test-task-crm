@@ -1,0 +1,5 @@
+.welcome {
+  &__text {
+    @apply py-6 text-xl text-black xl:pb-[51px] xl:pt-11;
+  }
+}

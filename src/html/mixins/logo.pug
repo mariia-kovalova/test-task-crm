@@ -1,0 +1,10 @@
+- const logo = components.logo;
+
+mixin logo()
+  a.logo(href="./", aria-label=logo.aria)
+    +svgIcon(logo.icon)
+    p  
+      span(class="logo__text") #{logo.text}
+      span(class="logo__version") #{logo.version}
+
+      

@@ -1,0 +1,15 @@
+- const burger = header.icons.burger;
+- const cross = header.icons.cross;
+
+
+button.burger(type="button", data-open-menu-btn) 
+  +svgIcon(burger)
+
+.backdrop
+  .mobile-menu(data-menu)
+    .mobile-menu__top
+      +user()
+      button.cross(type="button", data-close-menu-btn)
+        +svgIcon(cross)
+    .mobile-menu__content
+      +navbar()

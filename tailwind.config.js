@@ -6,13 +6,24 @@ const config = {
     screens: {
       sm: '480px', // mobile
       md: '768px', // tablet
-      xl: '1024px', // labtop
-      xxl: '1440px', // desktop
+      lg: '1024px', // laptop
+      xl: '1280px', // desktop
+      xxl: '1440px', // big-desktop
 
       smOnly: { max: '767.98px' },
       mdOnly: { min: '768px', max: '1023.98px' },
-      xlOnly: { min: '1023.98px', max: '1439.98px' },
-      notXxl: { max: '1439.98px' },
+      lgOnly: { min: '1024px', max: '1279.98px' },
+      xlOnly: { min: '1280px', max: '1439.98px' },
+      notLg: { max: '1023.98px' },
+      notXl: { max: '1279.98px' },
+    },
+    // CONTAINER
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '20px',
+        xl: '28px',
+      },
     },
     // THEME
     extend: {

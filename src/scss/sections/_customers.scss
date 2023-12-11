@@ -1,12 +1,20 @@
 .customers {
-  @apply relative w-[968px] rounded-[30px] bg-white pb-10 pl-[38px] pr-10 pt-[33px] shadow-200;
+  @apply lg:pb-32 pb-12;
 
-  &::before {
-    @apply absolute left-0 top-[166px] h-[1px] w-full bg-white-100 content-[""];
+  &__content {
+    @apply relative rounded-[30px] bg-white pb-10 pl-[38px] pr-10 pt-[33px] shadow-200;
+
+    &::before {
+      @apply absolute left-0 top-[166px] h-[1px] w-full bg-white-100 content-[""];
+    }
   }
 
   &__top {
-    @apply flex items-center justify-between;
+    @apply md:flex md:items-center md:justify-between;
+
+    & .search {
+      @apply mt-4 md:mt-0 smOnly:w-full;
+    }
   }
 
   &__title {

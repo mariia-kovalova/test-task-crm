@@ -18,8 +18,8 @@ body {
   @apply bg-body font-poppins text-base font-medium text-blue-400;
 }
 
-.page {
-  @apply max-h-[100vh] overflow-y-auto pb-32 pl-[377px];
+.wrapper {
+  @apply container xl:ml-[256px] xl:w-[1024px] xxl:ml-[357px];
 }
 
 .visually-hidden {

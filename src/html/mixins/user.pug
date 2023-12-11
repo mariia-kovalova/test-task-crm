@@ -1,0 +1,8 @@
+- const user = common.user;
+
+mixin user()
+  a.user(href=user.link)
+    img.user__image(width=42, height=42, src=user.image, alt=user.name)
+    div 
+      p.user__name #{user.name}
+      p.user__position #{user.position}

@@ -4,10 +4,12 @@
 @import 'components/logo';
 @import 'components/navbar';
 @import 'components/user';
+@import 'components/_mobile-menu';
 @import 'components/search';
 @import 'components/customers-list';
 @import 'components/pagination';
 
 @import 'sections/header';
+@import 'sections/welcome';
 @import 'sections/sidebar';
 @import 'sections/customers';

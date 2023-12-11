@@ -1,0 +1,14 @@
+- const items = components.navigation.items;
+- const arrow = components.navigation.icons.arrow;
+
+mixin navbar()
+  nav.nav
+    ul.nav__list
+      each item in items
+        li
+          a.nav__link(class={ 'nav__link--active': item.isActive }, href=item.link, data-menu-link)
+            .nav__title 
+              +svgIcon(item.icon)
+              | #{item.title}
+            if item.isArrow
+              +svgIcon(arrow)

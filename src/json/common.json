@@ -11,7 +11,23 @@
       "link": "./"
     }
   },
-  "header": { "welcome": { "text": "Hello", "hand": "👋🏼," } },
+  "header": {
+    "icons": {
+      "burger": {
+        "aria": "Open menu icon",
+        "svg": "icon-burger",
+        "width": 20,
+        "height": 18
+      },
+      "cross": {
+        "aria": "Close menu icon",
+        "svg": "icon-cross",
+        "width": 20,
+        "height": 20
+      }
+    }
+  },
+  "welcome": { "text": "Hello", "hand": "👋🏼," },
   "components": {
     "logo": {
       "aria": "Link to the homepage",
@@ -26,18 +42,6 @@
     },
     "navigation": {
       "icons": {
-        "menu": {
-          "aria": "Open menu icon",
-          "svg": "icon-menu",
-          "width": 32,
-          "height": 32
-        },
-        "close": {
-          "aria": "Close menu icon",
-          "svg": "icon-close",
-          "width": 32,
-          "height": 32
-        },
         "arrow": {
           "aria": "Arrow icon",
           "svg": "icon-arrow",

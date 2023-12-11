@@ -1,12 +1,12 @@
 .pagination {
-  @apply mt-7 flex justify-between;
+  @apply mt-7 md:flex md:justify-between;
 
   &__info {
-    @apply leading-6 tracking-[-0.14px] text-blue-100;
+    @apply leading-6 tracking-[-0.14px] text-blue-100 smOnly:text-center;
   }
 
   &__buttons {
-    @apply flex items-center gap-[13.5px];
+    @apply flex items-center gap-[13.5px] smOnly:mt-2 smOnly:justify-center;
   }
 
   &__list {
@@ -20,10 +20,6 @@
 
 .pagination__button {
   @apply common-transition flex h-6 w-6 items-center justify-center rounded-[4px] border border-white-100 bg-white-200 text-blue-300;
-
-  .pagination__buttons &:first-child > .icon-arrow {
-    @apply rotate-180;
-  }
 
   &:not(:disabled):hover,
   &:not(:disabled):focus,
@@ -49,4 +45,13 @@
   &:disabled .icon-arrow {
     @apply stroke-white-100;
   }
+}
+
+.pagination__buttons .pagination__button:first-child > .icon-arrow {
+  @apply rotate-180;
+}
+
+.pagination__list .pagination__item:nth-child(3),
+.pagination__list .pagination__item:nth-child(4) {
+  @apply smOnly:hidden;
 }

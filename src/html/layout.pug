@@ -1,4 +1,4 @@
-include components/mixins
+include ./mixins/mixins
 
 doctype html
 html(lang=common.lang)
@@ -11,6 +11,9 @@ html(lang=common.lang)
     include favicon
     include ogp
 
-  body 
+  body
+    include ./sections/header
+    include ./sections/sidebar 
+    include ./sections/welcome
     block content
     script(src="js/app.min.js") 
