@@ -716,66 +716,57 @@ body {
 .customers-table__head {
   margin-bottom: 1rem;
   margin-top: 2.75rem;
-  display: flex;
-  gap: 0.25rem;
 }
-@media (min-width: 1024px) {
-  .customers-table__head {
-    gap: 1.25rem;
-  }
+.customers-table__head .customers-table__text:nth-child(1) {
+  width: 152px;
 }
-@media (max-width: 1023.98px) {
-  .customers-table__head {
-    width: 888px;
-  }
+.customers-table__head .customers-table__text:nth-child(2) {
+  width: 117px;
 }
-.customers-table__head__text {
+.customers-table__head .customers-table__text:nth-child(3) {
+  width: 136px;
+}
+.customers-table__head .customers-table__text:nth-child(4) {
+  width: 187px;
+}
+.customers-table__head .customers-table__text:nth-child(5) {
+  width: 132px;
+}
+.customers-table__head .customers-table__text:nth-child(6) {
+  width: 80px;
+}
+.customers-table__head .customers-table__text:last-child {
+  padding-left: 0.75rem;
+}
+.customers-table__text {
   letter-spacing: -0.14px;
   --tw-text-opacity: 1;
   color: rgb(181 183 192 / var(--tw-text-opacity));
 }
-.customers-table__head__text:nth-child(1) {
-  width: 152px;
-}
-.customers-table__head__text:nth-child(2) {
-  width: 117px;
-}
-.customers-table__head__text:nth-child(3) {
-  width: 136px;
-}
-.customers-table__head__text:nth-child(4) {
-  width: 187px;
-}
-.customers-table__head__text:nth-child(5) {
-  width: 132px;
-}
-.customers-table__head__text:nth-child(6) {
-  width: 80px;
-}
-.customers-table__head__text:last-child {
-  padding-left: 0.75rem;
-}
 @media (max-width: 1023.98px) {
-  .customers-table__list {
-    width: 888px;
+  .customers-table__head, .customers-table__list {
+    width: 808px;
+  }
+}
+
+.customers-table__head, .customers-table .customer {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  .customers-table__head, .customers-table .customer {
+    gap: 1.25rem;
   }
 }
 
 .customer {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(238 238 238 / var(--tw-border-opacity));
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-@media (min-width: 1024px) {
-  .customer {
-    gap: 1.25rem;
-  }
 }
 .customer__text {
   letter-spacing: -0.14px;
