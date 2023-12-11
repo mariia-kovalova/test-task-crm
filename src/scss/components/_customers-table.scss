@@ -11,29 +11,38 @@ $table-col-sizes: (
   @apply max-w-full overflow-y-auto;
 
   &__head {
-    @apply notLg:w-[888px] lg:gap-5 mb-4 mt-11 flex gap-1;
-    &__text {
-      @apply tracking-[-0.14px] text-blue-100;
-    }
+    @apply mb-4 mt-11;
+  }
 
-    @each $number, $size in $table-col-sizes {
-      &__text:nth-child(#{$number}) {
-        width: $size;
-      }
-    }
-
-    &__text:last-child {
-      @apply pl-3;
+  @each $number, $size in $table-col-sizes {
+    &__head &__text:nth-child(#{$number}) {
+      width: $size;
     }
   }
 
+  &__head &__text:last-child {
+    @apply pl-3;
+  }
+
+  &__text {
+    @apply tracking-[-0.14px] text-blue-100;
+  }
+
+  &__head,
   &__list {
-    @apply notLg:w-[888px];
+    @apply notLg:w-[808px];
+  }
+}
+
+.customers-table {
+  &__head,
+  & .customer {
+    @apply lg:gap-5 flex items-center gap-1;
   }
 }
 
 .customer {
-  @apply lg:gap-5 flex items-center gap-1 border-b border-white-100 py-5;
+  @apply border-b border-white-100 py-5;
 
   &__text {
     @apply tracking-[-0.14px];
