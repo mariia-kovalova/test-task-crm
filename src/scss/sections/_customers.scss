@@ -1,11 +1,11 @@
 .customers {
-  @apply lg:pb-32 pb-12;
+  @apply pb-12 lg:pb-32;
 
   &__content {
-    @apply relative rounded-[30px] bg-white pb-10 pl-[38px] pr-10 pt-[33px] shadow-200;
+    @apply relative rounded-[30px] bg-white pb-10 pl-[38px] pr-10 pt-[33px] shadow-200 notXl:p-5;
 
     &::before {
-      @apply absolute left-0 top-[166px] h-[1px] w-full bg-white-100 content-[""];
+      @apply absolute left-0 top-[180px] h-[1px] w-full bg-white-100 content-[""] md:top-[126px] lg:top-[148px] xl:top-[166px];
     }
   }
 

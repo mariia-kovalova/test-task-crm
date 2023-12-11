@@ -2,26 +2,43 @@ $table-col-sizes: (
   1: 152px,
   2: 117px,
   3: 136px,
-  4: 187px,
-  5: 132px,
-  6: 80px,
+  4: 191px,
+  5: 128px,
+  6: 82px,
+);
+
+$table-col-sizes-md: (
+  1: 107px,
+  2: 72px,
+  3: 91px,
+  4: 142px,
+  5: 92px,
+  6: 50px,
 );
 
 .customers-table {
-  @apply max-w-full overflow-y-auto;
+  @apply mt-6 max-w-full overflow-y-auto lg:mt-11 notLg:text-[11px];
 
   &__head {
-    @apply mb-4 mt-11;
+    @apply mb-4 flex items-center gap-1 md:gap-5;
   }
 
-  @each $number, $size in $table-col-sizes {
+  @each $number, $size in $table-col-sizes-md {
     &__head &__text:nth-child(#{$number}) {
       width: $size;
     }
   }
 
+  @include mq(laptop) {
+    @each $number, $size in $table-col-sizes {
+      &__head &__text:nth-child(#{$number}) {
+        width: $size;
+      }
+    }
+  }
+
   &__head &__text:last-child {
-    @apply pl-3;
+    @apply md:pl-3;
   }
 
   &__text {
@@ -30,35 +47,6 @@ $table-col-sizes: (
 
   &__head,
   &__list {
-    @apply notLg:w-[808px];
-  }
-}
-
-.customers-table {
-  &__head,
-  & .customer {
-    @apply lg:gap-5 flex items-center gap-1;
-  }
-}
-
-.customer {
-  @apply border-b border-white-100 py-5;
-
-  &__text {
-    @apply tracking-[-0.14px];
-  }
-
-  @each $number, $size in $table-col-sizes {
-    &__text:nth-child(#{$number}) {
-      width: $size;
-    }
-  }
-
-  &__status {
-    @apply flex h-[29px] w-20 items-center justify-center rounded border border-red bg-red-light text-red;
-  }
-
-  &__status--active {
-    @apply border-green-400 bg-green-200 text-green-300;
+    @apply smOnly:w-[560px];
   }
 }

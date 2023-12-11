@@ -1,0 +1,47 @@
+$table-col-sizes: (
+  1: 152px,
+  2: 117px,
+  3: 136px,
+  4: 191px,
+  5: 128px,
+  6: 82px,
+);
+
+$table-col-sizes-md: (
+  1: 107px,
+  2: 72px,
+  3: 91px,
+  4: 142px,
+  5: 92px,
+  6: 50px,
+);
+
+.customer {
+  @apply flex items-center gap-1 border-b border-white-100 py-3 md:gap-5 lg:py-5;
+
+  &__text {
+    @apply tracking-[-0.14px];
+  }
+
+  @each $number, $size in $table-col-sizes-md {
+    &__text:nth-child(#{$number}) {
+      width: $size;
+    }
+  }
+
+  @include mq(laptop) {
+    @each $number, $size in $table-col-sizes {
+      &__text:nth-child(#{$number}) {
+        width: $size;
+      }
+    }
+  }
+
+  &__status {
+    @apply flex h-[29px] w-[50px] items-center justify-center rounded border border-red bg-red-light text-red md:w-[82px];
+  }
+
+  &__status--active {
+    @apply border-green-400 bg-green-200 text-green-300;
+  }
+}

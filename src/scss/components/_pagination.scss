@@ -2,11 +2,11 @@
   @apply mt-7 md:flex md:justify-between;
 
   &__info {
-    @apply leading-6 tracking-[-0.14px] text-blue-100 smOnly:text-center;
+    @apply leading-6 tracking-[-0.14px] text-blue-100 notLg:text-center notLg:text-sm;
   }
 
   &__buttons {
-    @apply flex items-center gap-[13.5px] smOnly:mt-2 smOnly:justify-center;
+    @apply flex items-center gap-[13.5px] smOnly:mt-4 notLg:justify-center;
   }
 
   &__list {
