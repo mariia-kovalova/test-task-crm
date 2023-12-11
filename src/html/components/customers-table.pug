@@ -1,11 +1,11 @@
-.customers__table
-  .customers__head
+.customers-table
+  .customers-tabel__head
     each item in list.head
-      p.customers__head__text #{item}
+      p.customers-table__text #{item}
 
-  ul.customers__list
+  ul.customers-table__list
     each item in list.items
-      li.customers__item
+      li
         .customer
           p.customer__text #{item.name}
           p.customer__text #{item.company}

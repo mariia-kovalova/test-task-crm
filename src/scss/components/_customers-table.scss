@@ -7,30 +7,29 @@ $table-col-sizes: (
   6: 80px,
 );
 
-.customers__table {
+.customers-table {
   @apply max-w-full overflow-y-auto;
-}
 
-.customers__head {
-  @apply notLg:w-[888px] lg:gap-5 mb-4 mt-11 flex gap-1;
+  &__head {
+    @apply notLg:w-[888px] lg:gap-5 mb-4 mt-11 flex gap-1;
+    &__text {
+      @apply tracking-[-0.14px] text-blue-100;
+    }
 
-  &__text {
-    @apply tracking-[-0.14px] text-blue-100;
-  }
+    @each $number, $size in $table-col-sizes {
+      &__text:nth-child(#{$number}) {
+        width: $size;
+      }
+    }
 
-  @each $number, $size in $table-col-sizes {
-    &__text:nth-child(#{$number}) {
-      width: $size;
+    &__text:last-child {
+      @apply pl-3;
     }
   }
 
-  &__text:last-child {
-    @apply pl-3;
+  &__list {
+    @apply notLg:w-[888px];
   }
-}
-
-.customers__list {
-  @apply notLg:w-[888px];
 }
 
 .customer {

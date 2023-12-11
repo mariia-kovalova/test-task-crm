@@ -7,8 +7,8 @@ section.customers
     .customers__content
       .customers__top
         div
-          h1.customers__title #{customers.title}
+          h2.customers__title #{customers.title}
           p.customers__subtitle #{customers.subtitle}
         include ../components/search
-      include ../components/customers-list
+      include ../components/customers-table
       include ../components/pagination
