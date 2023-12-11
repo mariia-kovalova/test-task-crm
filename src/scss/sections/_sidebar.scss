@@ -2,8 +2,11 @@
   @apply fixed left-0 top-0 z-10 flex min-h-[100vh] w-[306px] flex-col justify-between overflow-y-auto bg-white px-7 pb-[76px] pt-[37px] shadow-100;
   @apply notXl:hidden xlOnly:w-[256px] xlOnly:px-5;
 
-  & .nav,
-  & .user {
+  & .nav {
     @apply mt-[53px];
+  }
+
+  & .user {
+    @apply mt-[23px];
   }
 }
